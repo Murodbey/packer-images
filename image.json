@@ -11,6 +11,7 @@
         {
         "type": "shell",
         "inline": [
+            "sudo yum install update -y"
             "sudo yum install httpd -y",
             "sudo yum install php -y",
             "sudo touch /tmp/testfile",
