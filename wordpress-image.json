@@ -12,7 +12,6 @@
         "type": "shell",
         "inline": [
             "sudo yum install httpd -y",
-            "sudo yum install mysql-server -y",
             "sudo yum install php -y",
             "sudo yum install php-mysql -y",
             "sudo systemctl start mysqld",
