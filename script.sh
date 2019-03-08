@@ -10,7 +10,7 @@ echo ""
 read -p "Database name: " dbname
 read -p "Database username: " dbuser
 read -p "Enter a password for user $dbuser: " userpass
-mysql -uroot -p$rootpass <<MYSQL_SCRIPT
+mysqlsecure_installation -uroot -p$rootpass <<MYSQL_SCRIPT
 CREATE DATABASE $dbname CHARACTER SET utf8 COLLATE utf8_general_ci;
 DELETE FROM mysql.user WHERE user='$dbuser' AND host = 'localhost';
 FLUSH PRIVILEGES;
