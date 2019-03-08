@@ -33,11 +33,11 @@ rm -f /tmp/latest.tar.gz
 mv /var/www/html/wordpress /var/www/html/$wordurl
 cd /var/www/html/$wordurl
 sed -e "s/database_name_here/"$dbname"/" -e "s/username_here/"$dbuser"/" -e "s/password_here/"$userpass"/" wp-config-sample.php > wp-config.php
-chown apache: -R /var/www/html/$wordurl
+sudo chown apache: -R /var/www/html/$wordurl
 
 #Create a Virtual Host
 
-echo "
+sudo echo "
 
 <VirtualHost $address:80>
  ServerName www.$wordurl
