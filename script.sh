@@ -37,7 +37,7 @@ sudo chown apache: -R /var/www/html/$wordurl
 
 #Create a Virtual Host
 
-sudo echo "
+echo "
 
 <VirtualHost $address:80>
  ServerName www.$wordurl
@@ -65,7 +65,7 @@ RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
 
-" >> /var/www/html/$wordurl/.htaccess
+" sudo >> /var/www/html/$wordurl/.htaccess
 
 systemctl restart httpd
 
