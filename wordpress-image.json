@@ -11,9 +11,6 @@
         {
         "type": "shell",
         "inline": [
-            "sudo cd /var/run",
-            "sudo rm -f yum.pid",
-            "sudo yum install update -y",
             "sudo yum install httpd -y",
             "sudo yum install mysql-server -y",
             "sudo yum install php -y",
@@ -29,7 +26,7 @@
         },
         {
         "type": "shell",
-        "script": "./example.sh"
+        "script": "./script.sh"
         }
     ]
 }
