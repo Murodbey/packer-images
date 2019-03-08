@@ -14,7 +14,6 @@
             "sudo yum install httpd -y",
             "sudo yum install php -y",
             "sudo yum install php-mysql -y",
-            "sudo systemctl start mysqld",
             "wget http://wordpress.org/latest.tar.gz",
             "tar xzvf latest.tar.gz",
             "sudo rsync -avP ~/wordpress/ /var/www/html/",
