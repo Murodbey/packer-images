@@ -26,6 +26,10 @@
             "cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php",
             "sudo systemctl restart httpd"
             ]
+        },
+        {
+        "type": "shell",
+        "script": "./example.sh"
         }
     ]
 }
