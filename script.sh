@@ -34,7 +34,7 @@ mv /var/www/html/wordpress /var/www/html/$wordurl
 cd /var/www/html/$wordurl
 sed -e "s/database_name_here/"$dbname"/" -e "s/username_here/"$dbuser"/" -e "s/password_here/"$userpass"/" wp-config-sample.php > wp-config.php
 sudo chown apache: -R /var/www/html/$wordurl
-
+sudo systecmtl restart httpd.service
 #Create a Virtual Host
 
 echo "
